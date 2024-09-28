@@ -8,34 +8,35 @@ public class firstController {
 
     @GetMapping("/welcome")
     public String getTable() {
+
         // Creating an HTML table with a form to add jokes and cities, along with CSS
         String table = "<html>" +
             "<head>" +
             "<style>" +
             "table { " +
-            "  width: 50%; " +  // Set the table width to 50% of the page
-            "  margin: 50px auto; " +  // Center the table with a top margin
-            "  border-collapse: collapse; " +  // Merge the cell borders
-            "  text-align: center; " +  // Center the text in the cells
-            "  font-family: Arial, sans-serif; " +  // Set the table font
-            "  background-color: #f9f9f9; " +  // Default background color for the table
+            "  width: 50%; " + 
+            "  margin: 50px auto; " +  
+            "  border-collapse: collapse; " +  
+            "  text-align: center; " +  
+            "  font-family: Arial, sans-serif; " + 
+            "  background-color: #f9f9f9; " +  
             "}" +
             "th, td { " +
-            "  padding: 10px; " +  // Add padding inside cells
-            "  border: 2px solid #ddd; " +  // Set border width and color
+            "  padding: 10px; " +  
+            "  border: 2px solid #ddd; " + 
             "}" +
             "th { " +
-            "  background-color: #4CAF50; " +  // Set background color for headers
-            "  color: white; " +  // Set text color in the headers
+            "  background-color: #4CAF50; " +  
+            "  color: white; " +  
             "}" +
-            "tr:nth-child(even) { " +  // Apply alternating background color for even rows
+            "tr:nth-child(even) { " +  
             "  background-color: #f2f2f2; " +
             "}" +
-            "tr:hover { " +  // Change row background color on hover
+            "tr:hover { " +  
             "  background-color: #ddd; " +
             "}" +
             "form { " +
-            "  margin: 20px auto; " +  // Center the form
+            "  margin: 20px auto; " + 
             "  text-align: center; " +
             "}" +
             "input[type='text'] { " +
@@ -58,7 +59,7 @@ public class firstController {
             "</head>" +
             "<body>" +
             "<table id='jokeTable'>" +
-            "<tr><th>City</th><th>Joke</th></tr>" +  // Change "Country" to "Joke"
+            "<tr><th>City</th><th>Joke</th></tr>" +  e"
             "<tr><td>New York</td><td>Why don’t scientists trust atoms? Because they make up everything!</td></tr>" +
             "<tr><td>Tokyo</td><td>Why don’t skeletons fight each other? They don’t have the guts.</td></tr>" +
             "<tr><td>London</td><td>I told my wife she was drawing her eyebrows too high. She looked surprised.</td></tr>" +
