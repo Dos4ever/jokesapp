@@ -1,5 +1,4 @@
 package com.jokes.jokesapp;
-
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -59,7 +58,7 @@ public class firstController {
             "</head>" +
             "<body>" +
             "<table id='jokeTable'>" +
-            "<tr><th>City</th><th>Joke</th></tr>" +  e"
+            "<tr><th>City</th><th>Joke</th></tr>" + 
             "<tr><td>New York</td><td>Why don’t scientists trust atoms? Because they make up everything!</td></tr>" +
             "<tr><td>Tokyo</td><td>Why don’t skeletons fight each other? They don’t have the guts.</td></tr>" +
             "<tr><td>London</td><td>I told my wife she was drawing her eyebrows too high. She looked surprised.</td></tr>" +
